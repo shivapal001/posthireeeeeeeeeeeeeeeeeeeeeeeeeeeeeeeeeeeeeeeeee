@@ -78,12 +78,12 @@ export default function Dashboard() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="flex flex-col flex-1 bg-slate-50 dark:bg-slate-950"
+      className="flex flex-col flex-1 bg-slate-50 dark:bg-premium-bg"
     >
       {/* Header */}
-      <header className="px-6 py-8 flex items-center justify-between sticky top-0 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-xl z-20 border-b border-primary/10">
+      <header className="px-6 py-8 flex items-center justify-between sticky top-0 bg-slate-50/90 dark:bg-premium-bg/90 backdrop-blur-xl z-20 border-b border-primary/10">
         <div className="flex items-center gap-4">
-          <div className="size-10 rounded-full bg-slate-100 dark:bg-slate-900/50 p-0.5 border border-primary/5 dark:border-primary/10 overflow-hidden">
+          <div className="size-10 rounded-full bg-premium-surface/50 p-0.5 border border-primary/10 overflow-hidden">
             <img 
               className="size-full object-cover rounded-full transition-all duration-500" 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQF5dqmoGFRK9CXgGboNbQG6-EWhUus3hKTAW9LKMpNZdePxm6zvYMJyK5bKPUzUqjkmpaEnNu7zAT89el9Y30yNni-Q3P_b93-y4TMP7Ua_Vok2aizEkJMDFRwY1Ymok7boGZl4zpHYhm_YCr8NPe_MjsqdoC6qCCi9KQKABhrqmlzRFbBBT-ces_6b4Rk93VsmyUlE5p2WD3v1b8jqrpHz_1z32trR1bcUh26j-4Sf23zKi8fvhW9s0hk5Y9G_Iu5kQKcsNeKE-M" 
@@ -108,7 +108,7 @@ export default function Dashboard() {
           <>
             {/* Usage Overview Card */}
             <motion.div variants={itemVariants} className="px-6 mb-20">
-              <div className="relative p-10 bg-white dark:bg-slate-900 rounded-[2rem] border border-primary/10 shadow-xl shadow-primary/5 overflow-hidden">
+              <div className="relative p-10 bg-white dark:bg-premium-surface rounded-[2rem] border border-primary/10 shadow-xl shadow-primary/5 overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] -mr-32 -mt-32"></div>
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 blur-[100px] -ml-32 -mb-32"></div>
                 
@@ -148,7 +148,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className="space-y-8">
-                  <div className="w-full h-[2px] bg-slate-100 dark:bg-slate-900/50 rounded-full overflow-hidden">
+                  <div className="w-full h-[2px] bg-premium-surface/50 rounded-full overflow-hidden">
                     <motion.div 
                       initial={{ width: 0 }}
                       animate={{ width: '15%' }}
@@ -184,7 +184,7 @@ export default function Dashboard() {
                     whileHover={{ y: -5 }}
                     className="min-w-[120px] flex flex-col items-center text-center group cursor-pointer"
                   >
-                    <div className="size-20 rounded-full p-1 border border-slate-100 dark:border-slate-900/50 mb-6 group-hover:border-secondary transition-all duration-500 group-hover:glow-secondary group-hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]">
+                    <div className="size-20 rounded-full p-1 border border-premium-surface/50 mb-6 group-hover:border-secondary transition-all duration-500 group-hover:glow-secondary group-hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]">
                       <img className="size-full rounded-full object-cover transition-all duration-700" src={creator.img} alt={creator.name} referrerPolicy="no-referrer" />
                     </div>
                     <p className="font-bold text-primary group-hover:text-secondary transition-colors text-[12px] mb-1.5 uppercase tracking-tight">{creator.name}</p>
@@ -235,16 +235,16 @@ export default function Dashboard() {
             {/* Detailed Analytics Locked State */}
             <motion.div variants={itemVariants} className="px-6">
               <div className="bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 dark:from-primary/20 dark:via-secondary/10 dark:to-accent/20 rounded-3xl p-16 relative overflow-hidden border border-primary/10 group cursor-pointer shadow-xl shadow-primary/5">
-                <div className="absolute inset-0 bg-gradient-colorful opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
+                <div className="absolute inset-0 bg-premium-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
                 <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="size-12 rounded-full border border-primary/20 bg-white/50 dark:bg-slate-900/50 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                  <div className="size-12 rounded-full border border-primary/20 bg-white/50 dark:bg-premium-surface/50 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
                     <Lock className="text-primary" size={16} />
                   </div>
                   <h3 className="text-primary font-bold text-[12px] mb-4 uppercase tracking-[0.5em]">Advanced Analytics</h3>
                   <p className="text-neutral-500 dark:text-neutral-400 text-[10px] mb-12 max-w-[220px] leading-relaxed font-medium uppercase tracking-[0.2em]">Unlock deep ROI tracking & predictive insights.</p>
                   <button 
                     onClick={() => navigate('/plans')}
-                    className="w-full bg-gradient-colorful text-slate-50 hover:opacity-90 font-bold py-5 rounded-xl transition-all text-[11px] uppercase tracking-[0.4em] glow-primary"
+                    className="w-full bg-premium-gradient text-slate-50 hover:opacity-90 font-bold py-5 rounded-xl transition-all text-[11px] uppercase tracking-[0.4em] glow-primary"
                   >
                     Upgrade Now
                   </button>
@@ -256,8 +256,10 @@ export default function Dashboard() {
           <>
             {/* Creator Earnings Overview */}
             <motion.div variants={itemVariants} className="px-6 mb-20">
-              <div className="relative">
-                <div className="flex items-center justify-between mb-12">
+              <div className="relative p-10 bg-white dark:bg-premium-surface rounded-[2rem] border border-secondary/10 shadow-xl shadow-secondary/5 overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 blur-[100px] -mr-32 -mt-32"></div>
+                <div className="relative">
+                  <div className="flex items-center justify-between mb-12">
                   <div>
                     <p className="text-neutral-400 dark:text-neutral-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-6">Total Earnings</p>
                     <div className="flex items-baseline gap-4">
@@ -291,12 +293,12 @@ export default function Dashboard() {
                 </div>
 
                 <div className="space-y-8">
-                  <div className="w-full h-[2px] bg-slate-100 dark:bg-slate-900/50 rounded-full overflow-hidden">
+                  <div className="w-full h-[2px] bg-premium-surface/50 rounded-full overflow-hidden">
                     <motion.div 
                       initial={{ width: 0 }}
                       animate={{ width: '65%' }}
                       transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-                      className="h-full bg-secondary"
+                      className="h-full bg-premium-gradient"
                     ></motion.div>
                   </div>
                   <div className="flex items-center justify-between">
@@ -308,7 +310,8 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
+          </motion.div>
 
             {/* Creator Insights */}
             <motion.div variants={itemVariants} className="px-6 mb-24">
@@ -408,14 +411,14 @@ export default function Dashboard() {
             {/* Portfolio Section */}
             <motion.div variants={itemVariants} className="px-6">
               <div className="bg-gradient-to-br from-secondary/10 via-primary/5 to-accent/10 dark:from-secondary/20 dark:via-primary/10 dark:to-accent/20 rounded-3xl p-16 relative overflow-hidden border border-secondary/10 group cursor-pointer shadow-xl shadow-secondary/5">
-                <div className="absolute inset-0 bg-gradient-colorful opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
+                <div className="absolute inset-0 bg-premium-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
                 <div className="relative z-10 flex flex-col items-center text-center">
-                  <div className="size-12 rounded-full border border-secondary/20 bg-white/50 dark:bg-slate-900/50 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                  <div className="size-12 rounded-full border border-secondary/20 bg-white/50 dark:bg-premium-surface/50 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
                     <ArrowUpRight className="text-secondary" size={16} />
                   </div>
                   <h3 className="text-secondary font-bold text-[12px] mb-4 uppercase tracking-[0.5em]">Creator Portfolio</h3>
                   <p className="text-neutral-500 dark:text-neutral-400 text-[10px] mb-12 max-w-[200px] leading-relaxed font-medium uppercase tracking-[0.2em]">Showcase your best work and boost requests by 5x.</p>
-                  <button className="w-full bg-gradient-colorful text-slate-50 hover:opacity-90 font-bold py-5 rounded-xl transition-all text-[11px] uppercase tracking-[0.4em] glow-secondary">
+                  <button className="w-full bg-premium-gradient text-slate-50 hover:opacity-90 font-bold py-5 rounded-xl transition-all text-[11px] uppercase tracking-[0.4em] glow-secondary">
                     Update Portfolio
                   </button>
                 </div>

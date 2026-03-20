@@ -42,7 +42,7 @@ export const Login: React.FC = () => {
           className="relative z-10"
         >
           <div className="text-slate-50 text-[14px] font-bold uppercase tracking-[0.4em] cursor-pointer mb-24" onClick={() => navigate('/')}>
-            POSTHIRE
+            PostHire
           </div>
           
           <h2 className="text-slate-50 text-4xl font-extralight tracking-tighter leading-tight mb-6">
@@ -73,7 +73,7 @@ export const Login: React.FC = () => {
         </motion.div>
 
         <div className="relative z-10 text-[9px] font-bold text-slate-50/20 uppercase tracking-widest">
-          © 2026 POSTHIRE. ALL RIGHTS RESERVED.
+          © 2025 PostHire. All rights reserved.
         </div>
       </div>
 
@@ -185,7 +185,7 @@ export const Signup: React.FC = () => {
           className="relative z-10"
         >
           <div className="text-slate-50 text-[14px] font-bold uppercase tracking-[0.4em] cursor-pointer mb-24" onClick={() => navigate('/')}>
-            POSTHIRE
+            PostHire
           </div>
           
           <h2 className="text-slate-50 text-4xl font-extralight tracking-tighter leading-tight mb-6">
@@ -216,7 +216,7 @@ export const Signup: React.FC = () => {
         </motion.div>
 
         <div className="relative z-10 text-[9px] font-bold text-slate-50/20 uppercase tracking-widest">
-          © 2026 POSTHIRE. ALL RIGHTS RESERVED.
+          © 2025 PostHire. All rights reserved.
         </div>
       </div>
 

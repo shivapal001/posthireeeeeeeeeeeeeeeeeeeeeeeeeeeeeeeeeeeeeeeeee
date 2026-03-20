@@ -110,7 +110,7 @@ export default function Plans() {
           </motion.div>
 
           {/* Pro Plan */}
-          <motion.div variants={itemVariants} className="flex flex-col gap-8 border border-slate-50/10 bg-gradient-to-br from-primary via-secondary to-accent p-10 relative overflow-hidden group rounded-2xl glow-primary">
+          <motion.div variants={itemVariants} className="flex flex-col gap-8 border border-slate-50/10 bg-gradient-to-br from-primary to-indigo-600 p-10 relative overflow-hidden group rounded-2xl glow-primary">
             <div className="absolute top-0 right-0 p-10 opacity-10 group-hover:opacity-20 transition-opacity duration-1000">
               <Sparkles size={140} className="text-slate-50" />
             </div>

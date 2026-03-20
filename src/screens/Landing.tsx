@@ -368,7 +368,7 @@ const Landing: React.FC = () => {
         </div>
         <div className="l-hero-content">
           <div className="l-hero-eyebrow"><span></span>Startup × Creator Collaboration</div>
-          <h1 className="l-hero-h1">POST<em>HIRE</em></h1>
+          <h1 className="l-hero-h1">Post<em>Hire</em></h1>
           <div className="l-hero-rule"></div>
           <p className="l-hero-sub">The fastest way for startup founders to find, evaluate, and collaborate with creators — no cold outreach, no endless DMs.</p>
           <div className="l-hero-btns">
@@ -618,7 +618,7 @@ const Landing: React.FC = () => {
         <div className="l-footer-logo">Post<em>Hire</em></div>
         <p className="l-footer-tag">Where startups meet creators.</p>
         <div className="l-footer-links"><a>Privacy</a><a>Terms</a><a>Contact</a></div>
-        <p className="l-footer-copy">© 2026 PostHire. All rights reserved.</p>
+        <p className="l-footer-copy">© 2025 PostHire. All rights reserved.</p>
       </footer>
     </div>
   );
