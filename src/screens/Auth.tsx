@@ -73,7 +73,7 @@ export const Login: React.FC = () => {
         </motion.div>
 
         <div className="relative z-10 text-[9px] font-bold text-slate-50/20 uppercase tracking-widest">
-          © 2025 POSTHIRE. ALL RIGHTS RESERVED.
+          © 2026 POSTHIRE. ALL RIGHTS RESERVED.
         </div>
       </div>
 
@@ -216,7 +216,7 @@ export const Signup: React.FC = () => {
         </motion.div>
 
         <div className="relative z-10 text-[9px] font-bold text-slate-50/20 uppercase tracking-widest">
-          © 2025 POSTHIRE. ALL RIGHTS RESERVED.
+          © 2026 POSTHIRE. ALL RIGHTS RESERVED.
         </div>
       </div>
 

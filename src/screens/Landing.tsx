@@ -618,7 +618,7 @@ const Landing: React.FC = () => {
         <div className="l-footer-logo">Post<em>Hire</em></div>
         <p className="l-footer-tag">Where startups meet creators.</p>
         <div className="l-footer-links"><a>Privacy</a><a>Terms</a><a>Contact</a></div>
-        <p className="l-footer-copy">© 2025 PostHire. All rights reserved.</p>
+        <p className="l-footer-copy">© 2026 PostHire. All rights reserved.</p>
       </footer>
     </div>
   );
